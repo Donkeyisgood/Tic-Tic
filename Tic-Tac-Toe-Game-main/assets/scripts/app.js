@@ -84,13 +84,14 @@ function setScoreBoard() {
 			? 'X (CPU)'
 			: 'X (You)'
 	} <span id="x-win-inner" class="gameplay__highlight">${xWin}</span>`;
-	tieEl.innerHTML = `Ties <span id="tie-inner" class="gameplay__highlight">${tie}</span>`;
+	tieEl.innerHTML = `Drawing
+	<span id="tie-inner" class="gameplay__highlight">${tie}</span>`;
 	oWinEl.innerHTML = `${
 		isVsPlayer
 			? 'O (P2)'
 			: currentPlayerMark === O_CLASS
 			? 'O (You)'
-			: 'O (CPU)'
+			: 'O (Chat Gpt)'
 	} <span id="o-win-inner" class="gameplay__highlight">${oWin}</span>`;
 }
 
